@@ -1,4 +1,4 @@
-### List of things that Synthseg is doing @labels_to_image_model.py ###
+### What Synthseg is doing in [labels_to_image_model.py](https://github.com/BBillot/SynthSeg/blob/master/SynthSeg/labels_to_image_model.py) ###
 
 - reformat resolutions (?)  mysterious utils function
 - get shapes                mysterious utils function, not sure why this is needed given that resolution is fixed
@@ -16,7 +16,7 @@
     - layers.ImageGradients
     - layers.IntensityAugmentation
 - map gen lab to seg        layers.ConvertLabels
-- make brain model
+- make brain model, which just wraps the image and label lambdas into a class
 
 > this is only done once. Afterwards image generation is done by calling brain model itself
 > which is just two KL.lambdas
@@ -94,4 +94,4 @@ def find_closest_number_divisible_by_m_torch(n, m):
 ### Conclusion ###
 
 This would probably take about 2 weeks, if I'm smart.
-Would be a great exercise
+This might also take 1 afternoon, if Claude is just AGI
